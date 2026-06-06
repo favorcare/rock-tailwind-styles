@@ -7,6 +7,12 @@ Shared CSS styles for Favor Care's Rock RMS site, using Tailwind utility classes
 Add to your `<head>`:
 
 ```html
+<link rel="stylesheet" href="https://favorcare.github.io/rock-tailwind-styles/index.css">
+```
+
+or
+
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/favorcare/rock-tailwind-styles@main/index.css">
 ```
 

@@ -69,7 +69,11 @@ header .navbar {
 }
 
 .navbar-nav > li.active > a {
-  background-color: color-mix(in srgb, var(--color-fc-gold) 70%, white) !important;
+  background-color: color-mix(
+    in srgb,
+    var(--color-fc-gold) 70%,
+    white
+  ) !important;
 }
 
 .navbar-nav > li:hover > a {
@@ -131,8 +135,12 @@ header .navbar {
 }
 
 /* Headings — reset Bootstrap's sizing/weight/margins */
-.tw-scope h1, .tw-scope h2, .tw-scope h3,
-.tw-scope h4, .tw-scope h5, .tw-scope h6 {
+.tw-scope h1,
+.tw-scope h2,
+.tw-scope h3,
+.tw-scope h4,
+.tw-scope h5,
+.tw-scope h6 {
   margin: 0;
   font-weight: inherit;
   font-size: inherit;
@@ -144,7 +152,8 @@ header .navbar {
   margin: 0;
 }
 
-.tw-scope ul, .tw-scope ol {
+.tw-scope ul,
+.tw-scope ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -180,4 +189,14 @@ header .navbar {
 .tw-scope table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* OTHER IMPROVEMENTS */
+
+main.container h1.pagetitle {
+  display: none;
+}
+
+main.container ol.breadcrumb {
+  display: none;
 }
