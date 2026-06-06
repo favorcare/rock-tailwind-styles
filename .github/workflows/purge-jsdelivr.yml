@@ -1,0 +1,13 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge jsDelivr cache
+        run: |
+          curl -sS "https://purge.jsdelivr.net/gh/favorcare/rock-tailwind-styles@main/index.css" | head -c 500
