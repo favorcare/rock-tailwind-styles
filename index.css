@@ -85,7 +85,7 @@ header .navbar {
 }
 
 /* Tailwind-prefixed container — mirrors Bootstrap 3's .container */
-.tw:container {
+.tw-container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -93,19 +93,19 @@ header .navbar {
 }
 
 @media (min-width: 768px) {
-  .tw:container {
+  .tw-container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  .tw:container {
+  .tw-container {
     width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
-  .tw:container {
+  .tw-container {
     width: 1170px;
   }
 }
