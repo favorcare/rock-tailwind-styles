@@ -83,3 +83,29 @@ header .navbar {
   background-color: var(--color-fc-black) !important;
   color: var(--color-fc-white) !important;
 }
+
+/* Tailwind-prefixed container — mirrors Bootstrap 3's .container */
+.tw:container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .tw:container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tw:container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tw:container {
+    width: 1170px;
+  }
+}
