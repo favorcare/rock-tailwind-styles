@@ -88,22 +88,25 @@ header .navbar {
    Tailwind scope — neutralizes Bootstrap 3
    overrides inside sections you control.
    Add class="tw-scope" on your wrapper div.
+
+   Uses :where() to zero out specificity so
+   Tailwind utilities always win.
    ======================================== */
 
 /* Links — reset Bootstrap's #428bca blue */
-.tw-scope a {
+:where(.tw-scope) a {
   color: inherit;
   text-decoration: none;
 }
 
-.tw-scope a:hover {
+:where(.tw-scope) a:hover {
   color: inherit;
   text-decoration: none;
 }
 
 /* Headings — reset Bootstrap's sizing/weight/margins */
-.tw-scope h1, .tw-scope h2, .tw-scope h3,
-.tw-scope h4, .tw-scope h5, .tw-scope h6 {
+:where(.tw-scope) h1, :where(.tw-scope) h2, :where(.tw-scope) h3,
+:where(.tw-scope) h4, :where(.tw-scope) h5, :where(.tw-scope) h6 {
   margin: 0;
   font-weight: inherit;
   font-size: inherit;
@@ -111,25 +114,25 @@ header .navbar {
 }
 
 /* Paragraphs and lists */
-.tw-scope p {
+:where(.tw-scope) p {
   margin: 0;
 }
 
-.tw-scope ul, .tw-scope ol {
+:where(.tw-scope) ul, :where(.tw-scope) ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 /* Images */
-.tw-scope img {
+:where(.tw-scope) img {
   max-width: 100%;
   vertical-align: middle;
   border: 0;
 }
 
 /* Buttons — reset Bootstrap btn styles */
-.tw-scope button {
+:where(.tw-scope) button {
   background: none;
   border: none;
   font: inherit;
@@ -139,16 +142,16 @@ header .navbar {
 }
 
 /* Forms — reset Bootstrap form styles */
-.tw-scope input,
-.tw-scope textarea,
-.tw-scope select {
+:where(.tw-scope) input,
+:where(.tw-scope) textarea,
+:where(.tw-scope) select {
   font: inherit;
   color: inherit;
   margin: 0;
 }
 
 /* Table reset */
-.tw-scope table {
+:where(.tw-scope) table {
   border-collapse: collapse;
   border-spacing: 0;
 }
