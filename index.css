@@ -1,0 +1,85 @@
+:root {
+  --color-fc-black: #000000;
+  --color-fc-white: #ffffff;
+  --color-fc-gold: #ffb428;
+  --color-fc-dark: #1b1c1c;
+  --color-fc-brown: #3f4a3f;
+  --color-fc-brown-dark: #50453e;
+  --color-fc-text-muted: #6b7280;
+  --color-fc-bg-light: #f6f3f1;
+  --color-fc-bg-input: #f8f3f0;
+  --color-fc-bg-alt: #f2edea;
+  --color-fc-border: #d4c3be;
+  --color-fc-green: #006b32;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#form1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+main.container {
+  flex: 1;
+}
+
+/* footer reset */
+footer .container {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+footer {
+  margin: 0px;
+  margin-top: 50px;
+}
+
+footer > .container > hr {
+  display: none;
+}
+
+footer .container .row {
+  margin: 0px;
+}
+
+footer .container .row .col-md-12 {
+  padding: 0px;
+}
+
+header .navbar {
+  background-color: var(--color-fc-gold);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-nav > li > a {
+  color: var(--color-fc-black) !important;
+}
+
+.navbar-nav > li.active > a {
+  background-color: color-mix(in srgb, var(--color-fc-gold) 70%, white) !important;
+}
+
+.navbar-nav > li:hover > a {
+  background-color: var(--color-fc-black) !important;
+  color: var(--color-fc-white) !important;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: var(--color-fc-black) !important;
+  color: var(--color-fc-white) !important;
+}
