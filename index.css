@@ -96,8 +96,10 @@ header .navbar {
    to override this reset.
    ======================================== */
 
-/* Links — reset Bootstrap's #428bca blue */
-.tw-scope a {
+/* Links — reset Bootstrap's #428bca blue and underline hover */
+.tw-scope a,
+.tw-scope a:hover,
+.tw-scope a:focus {
   color: inherit !important;
   text-decoration: none !important;
 }
