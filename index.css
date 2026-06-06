@@ -200,3 +200,8 @@ main.container h1.pagetitle {
 main.container ol.breadcrumb {
   display: none;
 }
+
+/* fix jcrop not working correctly */
+img.image-editor-crop-source {
+  max-width: none !important;
+}
