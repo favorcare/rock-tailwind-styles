@@ -208,33 +208,49 @@ img.image-editor-crop-source {
 
 /* Fix Form Fields having different widths */
 .workflow-entry-panel .row > .col-md-6:only-child,
-.workflow-entry-panel .row > .col-md-6:last-child:nth-child(2):not(:first-child) {
-    width: 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+.workflow-entry-panel
+  .row
+  > .col-md-6:last-child:nth-child(2):not(:first-child) {
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 /* Fix input-group and form-control not filling full width */
 .workflow-entry-panel .input-group {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 .workflow-entry-panel .input-group .form-control {
-    flex: 1;
-    width: auto;
+  flex: 1;
+  width: auto;
+  min-width: 0;
 }
 
-/* Fix input group addon width and icon alignment */
+/* Fix input group addon (icon) and btn (dropdown) */
+.workflow-entry-panel .input-group-addon,
+.workflow-entry-panel .input-group-btn {
+  width: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon addon fixed width */
 .workflow-entry-panel .input-group-addon {
-    width: 38px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 38px;
+  text-align: center;
+}
+
+/* Dropdown btn full height */
+.workflow-entry-panel .input-group-btn .btn {
+  height: 100%;
 }
 
 /* Rock putting mt-4 for no reason */
 .workflow-entry-panel .form-section {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
