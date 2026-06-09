@@ -254,3 +254,23 @@ img.image-editor-crop-source {
 .workflow-entry-panel .form-section {
   margin-top: 0 !important;
 }
+
+/* Submit button - yellow (default) */
+.workflow-entry-panel .actions .btn-primary {
+  display: inline-block;
+  background-color: #f2b705;
+  color: #000000;
+  border: 3px solid #f2b705;
+  border-radius: 30px;
+  padding: 15px 50px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.workflow-entry-panel .actions .btn-primary:hover,
+.workflow-entry-panel .actions .btn-primary:focus {
+  background-color: #000000;
+  color: #f2b705;
+  border-color: #000000;
+}
