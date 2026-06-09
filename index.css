@@ -205,3 +205,14 @@ main.container ol.breadcrumb {
 img.image-editor-crop-source {
   max-width: none !important;
 }
+
+/* Fix Form Fields having different widths! */
+
+.workflow-entry-panel .row > .col-md-6:only-child,
+.workflow-entry-panel
+  .row
+  > .col-md-6:last-child:nth-child(2):not(:first-child) {
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
